@@ -49,6 +49,10 @@ defaults:
     values:
       layout: page
 
+# Tell Jekyll to process _pages (directories starting with _ are ignored by default)
+include:
+  - _pages
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
