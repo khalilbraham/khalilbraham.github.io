@@ -1,0 +1,82 @@
+# Site settings
+title: Khalil Braham
+first_name: Khalil
+last_name: Braham
+email: khalil.braham@polytechnique.edu
+description: >
+  PhD Researcher specializing in generative AI systems and large language models
+  for scientific applications at École Polytechnique & Inria Saclay.
+url: https://khalilbraham.github.io
+baseurl: ""
+lang: en
+
+# Author
+author:
+  name: Khalil Braham
+  email: khalil.braham@polytechnique.edu
+
+# Social links (fill in your handles)
+github_username: khalilbraham
+linkedin_username: khalil-braham
+scholar_userid: # add your Google Scholar user ID
+orcid_id: # add your ORCID
+
+# Navigation
+nav_bar:
+  - name: About
+    url: /
+  - name: Projects
+    url: /projects/
+  - name: Publications
+    url: /publications/
+  - name: CV
+    url: /assets/pdf/cv.pdf
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from Jekyll processing
+exclude:
+  - src/
+  - public/
+  - build/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - .claude/
+  - Gemfile.lock
+  - vendor/

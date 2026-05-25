@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-md-8">
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="text-muted lead">{{ page.description }}</p>
+    {% endif %}
+    <hr class="section-hr mb-4"/>
+    <div class="project-content">
+      {{ content }}
+    </div>
+    <div class="mt-4">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline-secondary btn-sm">
+        <i class="fas fa-arrow-left me-1"></i> Back to Projects
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    {% if page.img %}
+      <img src="{{ page.img | prepend: '/assets/img/' | relative_url }}"
+           class="img-fluid rounded shadow-sm mb-3" alt="{{ page.title }}"/>
+    {% endif %}
+    <div class="card border-0 bg-light">
+      <div class="card-body small">
+        {% if page.github %}
+          <p class="mb-1">
+            <i class="fab fa-github me-1"></i>
+            <a href="{{ page.github }}" target="_blank">GitHub</a>
+          </p>
+        {% endif %}
+        {% if page.paper %}
+          <p class="mb-1">
+            <i class="fas fa-file-alt me-1"></i>
+            <a href="{{ page.paper }}" target="_blank">Paper</a>
+          </p>
+        {% endif %}
+        {% if page.categories %}
+          <div class="mt-2">
+            {% for cat in page.categories %}
+              <span class="badge bg-secondary me-1">{{ cat }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

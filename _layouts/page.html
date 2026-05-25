@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-12">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="page-description text-muted">{{ page.description }}</p>
+    {% endif %}
+    <hr class="section-hr mb-4"/>
+    {{ content }}
+  </div>
+</div>

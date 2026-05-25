@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-md" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <span class="fw-bold">{{ site.first_name }}</span> {{ site.last_name }}
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        {% for item in site.nav_bar %}
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == item.url %} active{% endif %}"
+               href="{{ item.url | relative_url }}"
+               {% if item.url contains '.pdf' %}target="_blank"{% endif %}>
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+
+        <li class="nav-item ms-1">
+          <button class="btn btn-link nav-link px-2" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

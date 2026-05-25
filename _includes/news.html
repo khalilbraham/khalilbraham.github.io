@@ -1,0 +1,24 @@
+{% assign news = site.news | sort: 'date' | reverse %}
+{% if news.size > 0 %}
+<table class="news-table">
+  <tbody>
+    {% for item in news limit: 5 %}
+    <tr>
+      <td class="news-date text-muted small pe-3 text-nowrap">{{ item.date | date: "%b %d, %Y" }}</td>
+      <td class="small">{{ item.content | strip_html | truncatewords: 30 }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<ul class="news-list ps-0">
+  <li class="news-item d-flex align-items-baseline gap-3 py-2">
+    <span class="news-date text-muted small text-nowrap">May 2025</span>
+    <span class="small">Started PhD at École Polytechnique &amp; Inria Saclay, focusing on generative AI for scientific discovery.</span>
+  </li>
+  <li class="news-item d-flex align-items-baseline gap-3 py-2">
+    <span class="news-date text-muted small text-nowrap">Jan 2025</span>
+    <span class="small">Completed ML Research Collaboration with Sanofi on RLHF for pharmacology LLMs.</span>
+  </li>
+</ul>
+{% endif %}

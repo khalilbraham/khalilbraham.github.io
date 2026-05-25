@@ -1,0 +1,427 @@
+/* ============================================================
+   Al-folio inspired stylesheet
+   ============================================================ */
+
+/* ---------- Base ---------- */
+:root {
+  --af-accent: #0076df;
+  --af-accent-hover: #0056a3;
+  --af-text: #212529;
+  --af-muted: #6c757d;
+  --af-border: #dee2e6;
+  --af-bg: #ffffff;
+  --af-bg-secondary: #f8f9fa;
+  --af-shadow: rgba(0, 0, 0, 0.08);
+  --af-profile-size: 180px;
+}
+
+[data-bs-theme="dark"] {
+  --af-text: #d3d3d3;
+  --af-muted: #9a9a9a;
+  --af-border: #333333;
+  --af-bg: #1a1a2e;
+  --af-bg-secondary: #16213e;
+  --af-shadow: rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--af-text);
+  background-color: var(--af-bg);
+  padding-bottom: 4rem;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--af-accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--af-accent-hover);
+  text-decoration: underline;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--af-text);
+}
+
+/* ---------- Navbar ---------- */
+#navbar {
+  background-color: var(--af-bg);
+  border-bottom: 1px solid var(--af-border);
+  box-shadow: 0 1px 8px var(--af-shadow);
+  padding: 0.6rem 0;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#navbar .navbar-brand {
+  font-size: 1.05rem;
+  color: var(--af-text) !important;
+  letter-spacing: 0.01em;
+}
+#navbar .navbar-brand:hover {
+  text-decoration: none;
+  color: var(--af-accent) !important;
+}
+
+#navbar .nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--af-text) !important;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s, background 0.15s;
+}
+#navbar .nav-link:hover,
+#navbar .nav-link.active {
+  color: var(--af-accent) !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+#navbar .nav-link.active {
+  font-weight: 700;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--af-muted);
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
+  transition: color 0.15s;
+}
+#theme-toggle:hover {
+  color: var(--af-accent);
+}
+
+/* ---------- Profile column ---------- */
+.profile-container {
+  text-align: center;
+}
+
+.profile-img {
+  width: var(--af-profile-size);
+  height: var(--af-profile-size);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--af-border);
+  box-shadow: 0 2px 12px var(--af-shadow);
+}
+
+.profile-img-placeholder {
+  width: var(--af-profile-size);
+  height: var(--af-profile-size);
+  border-radius: 50%;
+  border: 3px solid var(--af-border);
+  background-color: var(--af-bg-secondary);
+}
+
+.profile-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.profile-position {
+  font-size: 0.82rem;
+  color: var(--af-muted);
+}
+
+.more-info {
+  font-size: 0.8rem;
+  color: var(--af-muted);
+}
+.more-info p {
+  margin-bottom: 0.2rem;
+}
+
+/* ---------- Social icons ---------- */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  margin-top: 0.75rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  color: var(--af-muted);
+  border-radius: 50%;
+  transition: color 0.15s, background 0.15s;
+}
+
+.social-icons a:hover {
+  color: var(--af-accent);
+  background-color: var(--af-bg-secondary);
+  text-decoration: none;
+}
+
+/* ---------- About / page content ---------- */
+.about-text {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-hr {
+  border-color: var(--af-border);
+  opacity: 1;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* ---------- Page titles ---------- */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.page-description {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ---------- News ---------- */
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.news-table tr {
+  border-bottom: 1px solid var(--af-border);
+}
+.news-table tr:last-child {
+  border-bottom: none;
+}
+.news-table td {
+  padding: 0.5rem 0;
+  vertical-align: top;
+}
+.news-date {
+  width: 130px;
+  min-width: 130px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+.news-item {
+  border-bottom: 1px solid var(--af-border);
+}
+.news-item:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Project cards ---------- */
+.project-card {
+  border: 1px solid var(--af-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--af-bg);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 24px var(--af-shadow);
+  transform: translateY(-3px);
+  border-color: var(--af-accent);
+}
+
+.project-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card-icon {
+  height: 120px;
+  background: linear-gradient(135deg, var(--af-bg-secondary), var(--af-bg));
+  border-bottom: 1px solid var(--af-border);
+}
+
+.project-card-body {
+  padding: 1.1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.project-card-title a {
+  color: var(--af-text) !important;
+}
+.project-card-title a:hover {
+  color: var(--af-accent) !important;
+  text-decoration: none;
+}
+
+.project-card-text {
+  font-size: 0.875rem;
+  color: var(--af-muted);
+  line-height: 1.55;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Skill badges ---------- */
+.skill-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  margin: 0.2rem 0.15rem;
+  border: 1px solid var(--af-border);
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: var(--af-muted);
+  background-color: var(--af-bg-secondary);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.skill-badge:hover {
+  border-color: var(--af-accent);
+  color: var(--af-accent);
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.35rem;
+  top: 0.6rem;
+  bottom: 0;
+  width: 2px;
+  background: var(--af-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.72rem;
+  top: 0.45rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--af-accent);
+  border: 2px solid var(--af-bg);
+  box-shadow: 0 0 0 2px var(--af-border);
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--af-muted);
+}
+
+/* ---------- Publications ---------- */
+.publication-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--af-border);
+}
+.publication-item:last-child {
+  border-bottom: none;
+}
+.publication-title {
+  font-weight: 600;
+  color: var(--af-text);
+  font-size: 0.95rem;
+}
+.publication-venue {
+  color: var(--af-accent);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* ---------- Project detail ---------- */
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.project-content {
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ---------- Footer ---------- */
+.fixed-bottom-footer {
+  border-top: 1px solid var(--af-border);
+  background-color: var(--af-bg);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* ---------- Code ---------- */
+code {
+  font-size: 0.85em;
+  color: #d63384;
+  background: var(--af-bg-secondary);
+  padding: 0.1em 0.35em;
+  border-radius: 0.2rem;
+}
+
+pre code {
+  color: inherit;
+  background: none;
+  padding: 0;
+}
+
+pre {
+  background: var(--af-bg-secondary);
+  border: 1px solid var(--af-border);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 767px) {
+  .profile-col {
+    margin-bottom: 1.5rem;
+  }
+}
