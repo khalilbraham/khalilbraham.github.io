@@ -110,10 +110,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-img {
-  width: var(--af-profile-size);
-  height: var(--af-profile-size);
-  object-fit: cover;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
   border: 3px solid var(--af-border);
   box-shadow: 0 2px 12px var(--af-shadow);
 }
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile-img-placeholder {
   width: var(--af-profile-size);
   height: var(--af-profile-size);
-  border-radius: 50%;
+  border-radius: 8px;
   border: 3px solid var(--af-border);
   background-color: var(--af-bg-secondary);
 }

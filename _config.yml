@@ -2,10 +2,10 @@
 title: Khalil Braham
 first_name: Khalil
 last_name: Braham
-email: khalil.braham@polytechnique.edu
+email: mohamed-khalil.braham@polytechnique.edu
 description: >
-  PhD Researcher specializing in generative AI systems and large language models
-  for scientific applications at École Polytechnique & Inria Saclay.
+  PhD student in generative AI and computational biology at École Polytechnique
+  & University of Cambridge, funded by Sanofi.
 url: https://khalilbraham.github.io
 baseurl: ""
 lang: en
@@ -13,7 +13,7 @@ lang: en
 # Author
 author:
   name: Khalil Braham
-  email: khalil.braham@polytechnique.edu
+  email: mohamed-khalil.braham@polytechnique.edu
 
 # Social links (fill in your handles)
 github_username: khalilbraham

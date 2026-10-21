@@ -3,34 +3,25 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  PhD Researcher · <a href="https://www.polytechnique.edu/" target="_blank">École Polytechnique</a>
-  &amp; <a href="https://www.inria.fr/fr/centre-inria-saclay-ile-de-france" target="_blank">Inria Saclay</a>
+  PhD Student · <a href="https://www.polytechnique.edu/" target="_blank">École Polytechnique</a>
+  &amp; <a href="https://www.cam.ac.uk/" target="_blank">University of Cambridge</a>
 
 profile:
   image: prof_pic.png
-  position: Research Scientist · AI & ML Systems
-  institution: École Polytechnique & Inria Saclay
+  position: PhD Student · Generative AI &amp; Computational Biology
+  institution: École Polytechnique &amp; University of Cambridge
   more_info: >
     <p>Palaiseau, France</p>
-    <p><a href="mailto:khalil.braham@polytechnique.edu">khalil.braham@polytechnique.edu</a></p>
+    <p><a href="mailto:mohamed-khalil.braham@polytechnique.edu">mohamed-khalil.braham@polytechnique.edu</a></p>
+    <p><a href="mailto:mohamedkhalil.braham@sanofi.com">mohamedkhalil.braham@sanofi.com</a></p>
 
 news: true
 social: true
 ---
 
-PhD researcher specializing in **generative AI systems** and **large language models** for scientific applications. Currently collaborating with [Sanofi](https://www.sanofi.com/) on LLM alignment for pharmacology and conducting research at [École Polytechnique](https://www.polytechnique.edu/) and [Inria Saclay](https://www.inria.fr/).
+I am a PhD student in **generative AI** and **computational biology**, funded by [Sanofi](https://www.sanofi.com/) and conducting my research at [École Polytechnique](https://www.polytechnique.edu/) and the [University of Cambridge](https://www.cam.ac.uk/). I am supervised by [Prof. Michalis Vazirgiannis](https://scholar.google.com/citations?view_op=search_authors&mauthors=Michalis+Vazirgiannis){:target="_blank"} (École Polytechnique), [Prof. Pietro Liò](https://scholar.google.com/citations?view_op=search_authors&mauthors=Pietro+Lio+Cambridge){:target="_blank"} (University of Cambridge) and [Choi Siak Leng](https://www.linkedin.com/search/results/people/?keywords=Choi%20Siak%20Leng%20Sanofi){:target="_blank"} (Sanofi).
 
-My work bridges cutting-edge ML research with real-world impact in drug discovery, focusing on discrete generative modeling, flow matching, reinforcement learning from human feedback (RLHF), and agentic AI systems that can autonomously propose and validate scientific hypotheses.
-
----
-
-### Supervision
-
-I am supervised by:
-
-- [Prof. Michalis Vazirgiannis](https://scholar.google.com/citations?view_op=search_authors&mauthors=Michalis+Vazirgiannis){:target="_blank"} — École Polytechnique
-- [Prof. Pietro Liò](https://scholar.google.com/citations?view_op=search_authors&mauthors=Pietro+Lio+Cambridge){:target="_blank"} — University of Cambridge
-- [Choi Siak Leng](https://www.linkedin.com/search/results/people/?keywords=Choi%20Siak%20Leng%20Sanofi){:target="_blank"} — Sanofi
+My research focuses on **multi-agent systems**, **post-training** and **reasoning** in large language models, applied to computational biology.
 
 ### Supervised Interns
 
@@ -97,15 +88,9 @@ I am supervised by:
 <div class="timeline mt-3">
   <div class="timeline-item">
     <span class="timeline-date text-muted small">2025 – Present</span>
-    <h6 class="fw-bold mb-0 mt-1">PhD Researcher</h6>
-    <p class="text-muted small mb-1">École Polytechnique &amp; Inria Saclay</p>
-    <p class="small">Discrete generative modeling, flow matching, and LLM agents for scientific discovery.</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date text-muted small">2024 – 2025</span>
-    <h6 class="fw-bold mb-0 mt-1">ML Research Collaboration</h6>
-    <p class="text-muted small mb-1">Sanofi</p>
-    <p class="small">Developing RLHF pipelines for LLM alignment with pharmacological domain expertise.</p>
+    <h6 class="fw-bold mb-0 mt-1">PhD Student</h6>
+    <p class="text-muted small mb-1">École Polytechnique &amp; University of Cambridge · funded by Sanofi</p>
+    <p class="small">Multi-agent systems, post-training and reasoning for computational biology.</p>
   </div>
   <div class="timeline-item">
     <span class="timeline-date text-muted small">2023 – 2024</span>
