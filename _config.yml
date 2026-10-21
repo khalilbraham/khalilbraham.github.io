@@ -25,25 +25,10 @@ orcid_id: # add your ORCID
 nav_bar:
   - name: About
     url: /
-  - name: Projects
-    url: /projects/
-  - name: Publications
-    url: /publications/
   - name: CV
     url: /assets/pdf/cv.pdf
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
 defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
   - scope:
       path: "_pages"
     values:
