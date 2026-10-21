@@ -7,7 +7,7 @@ subtitle: >
   &amp; <a href="https://www.inria.fr/fr/centre-inria-saclay-ile-de-france" target="_blank">Inria Saclay</a>
 
 profile:
-  image: prof_pic.jpg
+  image: prof_pic.png
   position: Research Scientist · AI & ML Systems
   institution: École Polytechnique & Inria Saclay
   more_info: >
@@ -21,6 +21,20 @@ social: true
 PhD researcher specializing in **generative AI systems** and **large language models** for scientific applications. Currently collaborating with [Sanofi](https://www.sanofi.com/) on LLM alignment for pharmacology and conducting research at [École Polytechnique](https://www.polytechnique.edu/) and [Inria Saclay](https://www.inria.fr/).
 
 My work bridges cutting-edge ML research with real-world impact in drug discovery, focusing on discrete generative modeling, flow matching, reinforcement learning from human feedback (RLHF), and agentic AI systems that can autonomously propose and validate scientific hypotheses.
+
+---
+
+### Supervision
+
+I am supervised by:
+
+- [Prof. Michalis Vazirgiannis](https://scholar.google.com/citations?view_op=search_authors&mauthors=Michalis+Vazirgiannis){:target="_blank"} — École Polytechnique
+- [Prof. Pietro Liò](https://scholar.google.com/citations?view_op=search_authors&mauthors=Pietro+Lio+Cambridge){:target="_blank"} — University of Cambridge
+- [Choi Siak Leng](https://www.linkedin.com/search/results/people/?keywords=Choi%20Siak%20Leng%20Sanofi){:target="_blank"} — Sanofi
+
+### Supervised Interns
+
+- [João Pedro Donasolo](https://www.linkedin.com/search/results/people/?keywords=Jo%C3%A3o%20Pedro%20Donasolo){:target="_blank"} — École Polytechnique
 
 ---
 

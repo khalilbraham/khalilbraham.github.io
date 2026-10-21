@@ -27,7 +27,7 @@
   <!-- Restore theme before render to avoid flash -->
   <script>
     (function () {
-      const t = localStorage.getItem('theme') || 'light';
+      const t = localStorage.getItem('theme-pref') || 'light';
       document.documentElement.setAttribute('data-bs-theme', t);
     })();
   </script>
